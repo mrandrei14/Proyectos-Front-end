@@ -1,0 +1,75 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --fuente_primaria: 'Neonderthaw';
+}
+
+body{
+    background-image: url('../img/ocean_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedor__reloj {
+    max-width: 1024px;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    border-radius: 5px;
+    font-family: var(--fuente_primaria);
+}
+
+.contenedor__hora,
+.contenedor__fecha,
+.contenedor__fecha__palabras {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, rgba(0, 0 , 0, .7), rgba(240, 240, 240, .4));
+    padding: 15px 5px;
+    transition: 1s ease all;
+}
+
+.contenedor__hora:hover,
+.contenedor__fecha:hover,
+.contenedor__fecha__palabras:hover {
+    background: #000;
+    cursor: pointer;
+    transform: translateX(5px);
+}
+
+.contenedor__hora {
+    margin: 15px 0;
+}
+
+    .contenedor__fecha__palabras p,
+    .contenedor__hora p,
+    .contenedor__fecha p {
+        display: inline;
+        color: #fff;
+        font-size: 2.5rem;
+    }
+
+    .contenedor__fecha__palabras p {
+        font-size: 2.25rem;
+    }
+
+    .contenedor__fecha__palabras .espacio__frase {
+        margin: 0 4px;
+    }
+
+@media screen and (max-width: 800px) {
+    .contenedor__reloj {
+        width: 75%;
+    }
+}

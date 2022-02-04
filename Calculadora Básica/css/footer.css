@@ -1,0 +1,127 @@
+@import url(normalize.css);
+@import url(insumos.css);
+
+footer {
+    width: 100%;
+}
+
+.footer__container,
+.footer__container__rights {
+        width: 100%;
+        font-family: var(--fuente-primaria);
+    }
+
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--fondo-color-secundario);
+    }
+
+        .container__items {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 15px 15px;
+        }
+
+            .container__item {
+                padding: 20px;
+            }
+
+                .item__title {
+                    color: var(--fuente-color-primario);
+                    margin-bottom: 5px;
+                    transition: .35s ease-in-out all;
+                    position: relative;
+                }
+
+                    .item__title:hover {
+                        color: var(--fuente-color-secundario);
+                    }
+
+                    .item__title::before {
+                        content: '';
+                        width: 0;
+                        border: 0px solid var(--efectos-color);
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transition: .35s ease all;
+                    }
+
+                    .item__title:hover::before {
+                        width: 100%;
+                        border-width: 1px;
+                    }
+
+                .container__menu__footer {
+                    width: 100%;
+                    margin-left: 10px;
+                }
+
+                    .list__items {
+                        list-style: none;
+                    }
+
+                        .list__items li {
+                            padding-bottom: 5px;
+                        }
+
+                            .list__items li a {
+                                font-size: 1rem;
+                                color: var(--fuente-color-primario);
+                                text-decoration: none;
+                                transition: .25s ease all;
+                                letter-spacing: 1px;
+                            }
+                            
+                            .list__items li a:hover {
+                                color: var(--fuente-color-secundario);
+                                letter-spacing: 1.5px;
+                                font-weight: 700;
+                            }
+
+                                .list__items .social_media {
+                                    font-size: 1.5rem;
+                                }
+
+    .footer__container__rights {
+        padding: 20px 0;
+        background-color: var(--fondo-color-primario);   
+        text-align: center;
+    }
+
+        .rights__information {
+            margin-bottom: 7px;
+        }
+
+            .creator_info {
+                color: var(--fuente-color-primario);
+            }
+
+                .creator_info span {
+                    font-weight: 700;
+                }
+
+                .creator_info span:hover {
+                    color: var(--fuente-color-secundario);
+                }
+
+            .terms_privacy {
+                font-size: .9rem;
+                color: var(--fuente-color-secundario);
+            }
+
+                .terms_privacy a {
+                    color: var(--fuente-color-primario);
+                    transition: .25s ease-in-out all;
+                    letter-spacing: 1px;
+                }
+                
+                .terms_privacy a:hover {
+                    font-weight: 700;
+                    letter-spacing: 1.5px;
+                }

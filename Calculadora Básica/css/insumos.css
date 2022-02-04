@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --iconos-color: #BB2020;
+    --fondo-color-primario: #06111C;
+    --fondo-color-secundario: #121317;
+    --efectos-color: #FFEB4D;
+    --fuente-color-primario: #BEC7C7;
+    --fuente-color-secundario: #f2f2f2;
+
+    --fuente-primaria: 'Outfit';
+}

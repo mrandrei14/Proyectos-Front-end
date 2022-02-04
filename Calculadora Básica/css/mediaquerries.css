@@ -1,0 +1,19 @@
+@import url(insumos.css);
+
+@media screen and (max-width: 800px) {
+    /* Header */
+    .navbar__title {
+        font-size: 1.35rem;
+    }
+
+    /* Main */
+
+    /* Footer */
+    .creator_info {
+        font-size: .925rem;
+    }
+
+    .container__items {
+        flex-direction: column;
+    }
+}

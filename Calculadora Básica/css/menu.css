@@ -1,0 +1,30 @@
+@import url(normalize.css);
+@import url(insumos.css);
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: var(--fondo-color-primario);
+}
+
+    .header__navbar {
+        width: 90%;
+        padding: 20px 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-family: var(--fuente-primaria);
+        color: var(--fuente-color-primario);
+    }
+
+        .navbar__logo {
+            font-size: 1.5rem;
+            color: var(--efectos-color);
+        }
+
+        .navbar__title {
+            display: inline;
+            margin-left: 5px;
+        }
+
